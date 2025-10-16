@@ -5,20 +5,16 @@ namespace SumTwoNumbers
     {
         public static void Main()
         {
-            const string MSG_INPUT1 = "Enter the first integer:";
-            const string MSG_INPUT2 = "Enter the second integer:";
-            const string MSG_RESULT = "The sum is:";
+            const string MSG_INPUT = "Enter temperature in Celsius:";
+            const string MSG_RESULT = "Temperature in Kelvin is:";
 
-            int num1;
-            int num2;
-            int sum;
-
-            Console.Write(MSG_INPUT1);
-            num1 = Int32.Parse(Console.ReadLine());
-            Console.Write(MSG_INPUT2);
-            num2 = Int32.Parse(Console.ReadLine());
-            sum = num1 + num2;
-            Console.Write(MSG_RESULT + sum);
+            float celsius;
+            float kelvin;
+            
+            Console.Write(MSG_INPUT);
+            celsius = Int32.Parse(Console.ReadLine());
+            kelvin = (float) (celsius + 273.15);
+            Console.WriteLine(MSG_RESULT + kelvin);
         }
     }
 }
