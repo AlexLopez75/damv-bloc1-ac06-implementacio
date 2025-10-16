@@ -5,6 +5,7 @@ namespace SumTwoNumbers
     {
         public static void Main()
         {
+            // PRECONDITION: The user is prompted to input two integers.
             const string MsgInput1 = "Enter the first integer:";
             const string MsgInput2 = "Enter the second integer:";
             const string MsgResult = "The sum is:";
@@ -19,6 +20,7 @@ namespace SumTwoNumbers
             num2 = Int32.Parse(Console.ReadLine());
             sum = num1 + num2;
             Console.WriteLine(MsgResult + sum);
+            // POSTCONDITION: 'sum' contains the sum of 'num1' and 'num2', and it is // displayed.
         }
     }
 }
