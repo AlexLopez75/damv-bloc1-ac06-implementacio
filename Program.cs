@@ -42,7 +42,7 @@ namespace IsNaturalNumber
             {
                 Console.Write(MsgError);
             }
-
+            // POSTCONDITION: The algorithm has read a 'value' and output a message indicating whether 'value' is a natural number.
         }
     }
 }
